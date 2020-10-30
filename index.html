@@ -6,8 +6,20 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="grid">
+        <div class="main">
+            <div class="controls">
+                <input type="button" value="Clear" id="clear">
+                <div class="sizeControl">
+                    <label for="Grid size" id="gridSizeLabel"></label>
+                    <input type="range" name="Grid size" oninput="etchASketch()" list="tickmarks" min="1" max="100" step="1" id="gridSizeSelector">
+                </div>
+                <input type="button" value="Single color" class="color" id="black">
+                <input type="button" value="Random color" class="color" id="random">
+            </div>
+            <div id="grid">
+            </div>
         </div>
+        
     </body>
     <script src="script.js"></script>
 </html>
