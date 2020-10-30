@@ -1,6 +1,6 @@
 const grid = document.querySelector('#grid');
 const gridSizeSlider = document.querySelector("#gridSizeSelector");
-let color = 'Black&White';
+let color = 'Single color';
 let numberOfColumns = gridSizeSlider.value;
 let gridSize = 0.70 * Math.min(screen.height,screen.width);
 
